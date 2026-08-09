@@ -1,8 +1,8 @@
 # My Personal Blog
 
-A small Quarto website for projects and personal writing.
-The visual system uses locally hosted Source Sans 3 and Source Code Pro variable fonts.
-Writing and Projects are separate content streams, with shared metadata-driven listing layouts.
+A small Quarto website for projects and personal writing. The visual system uses locally
+hosted Source Sans 3 and Source Code Pro variable fonts. Writing and Projects are
+separate content streams, with shared metadata-driven listing layouts.
 
 ## Local setup
 
