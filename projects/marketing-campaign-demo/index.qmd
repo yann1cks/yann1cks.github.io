@@ -1,0 +1,71 @@
+---
+title: "A Small Python Demo for Campaign Readouts"
+description: "A compact example of using Python inside Quarto to summarise campaign performance."
+date: "2026-05-23"
+categories: [Marketing Measurement, Python, Quarto]
+featured: true
+jupyter: python3
+execute:
+  echo: true
+  freeze: auto
+---
+
+## Overview
+
+This short demo shows the kind of lightweight analysis that works well in a Quarto case
+study: create a small data set, calculate a few marketing metrics, and turn the result
+into a chart that can be discussed with a non-technical audience.
+
+## Campaign performance
+
+```{python}
+#| label: tbl-campaign-performance
+#| tbl-cap: "Illustrative campaign performance by channel"
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+campaigns = pd.DataFrame(
+    {
+        "channel": ["Search", "Social", "Email", "Display", "Affiliate"],
+        "spend": [18000, 14000, 3500, 9000, 7000],
+        "conversions": [720, 420, 210, 180, 260],
+        "revenue": [64800, 33600, 18900, 13500, 23400],
+    }
+)
+
+campaigns["cost_per_conversion"] = campaigns["spend"] / campaigns["conversions"]
+campaigns["roas"] = campaigns["revenue"] / campaigns["spend"]
+campaigns.sort_values("roas", ascending=False)
+```
+
+The table gives a quick performance readout. Email has a small spend base but strong
+efficiency, while Search carries more volume.
+
+## Return on ad spend
+
+```{python}
+#| label: fig-campaign-roas
+#| fig-cap: "Return on ad spend by channel"
+#| fig-alt: >-
+#|   Horizontal bar chart comparing return on ad spend across five channels. Email is
+#|   highest, followed by Affiliate, Search, Social, and Display.
+
+fig, ax = plt.subplots(figsize=(7, 4))
+ordered = campaigns.sort_values("roas")
+
+ax.barh(ordered["channel"], ordered["roas"], color="#0e4e68")
+ax.axvline(1, color="#666666", linewidth=1)
+ax.set_title("Return on ad spend by channel")
+ax.set_xlabel("Revenue / spend")
+ax.set_ylabel("")
+ax.spines[["top", "right"]].set_visible(False)
+
+plt.show()
+```
+
+## Interpretation
+
+For a real readout, this would be followed by caveats: attribution window,
+incrementality, audience overlap, campaign objective, and whether the next decision is
+about scaling spend or improving creative.

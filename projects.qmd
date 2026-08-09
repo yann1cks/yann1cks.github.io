@@ -1,0 +1,21 @@
+---
+title: "Projects"
+subtitle: >-
+  Case studies in marketing measurement, consumer analytics, and reproducible data
+  science.
+body-classes: listing-page
+listing:
+  id: projects-list
+  contents: projects
+  template: styles/editorial-listing.ejs
+  template-params:
+    empty-message: "No projects published yet."
+  sort: "date desc"
+  fields: [date, title, description, categories]
+  categories: false
+  sort-ui: false
+  filter-ui: false
+---
+
+::: {#projects-list}
+:::

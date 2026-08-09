@@ -1,0 +1,9 @@
+flavor = "quarto"
+
+[format]
+line-width = 88
+wrap = "reflow"
+
+[formatters]
+python = "ruff"
+r = "air"

@@ -1,0 +1,12 @@
+/.quarto/
+/.pixi/
+/_freeze/
+/_site/
+/.jupyter_cache/
+/.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+
+**/*.quarto_ipynb

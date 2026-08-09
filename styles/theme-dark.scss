@@ -1,0 +1,54 @@
+/*-- scss:defaults --*/
+
+$web-font-path: false;
+$font-family-sans-serif:
+  "Source Sans 3",
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  sans-serif;
+$font-family-monospace:
+  "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: $font-family-sans-serif;
+$body-bg: #171a1c;
+$body-color: #f3f5f6;
+$headings-color: #f3f5f6;
+$link-color: #74c0da;
+$primary: #74c0da;
+$code-color: #d9edf4;
+$code-bg: #202529;
+$code-block-bg: #202529;
+$pre-color: #f3f5f6;
+$navbar-bg: #171a1c;
+$navbar-fg: #f3f5f6;
+$navbar-hl: #74c0da;
+$footer-bg: #171a1c;
+$footer-fg: #b6c1c6;
+$border-color: #3a4449;
+$focus-ring-color: rgba(#74c0da, 0.45);
+
+/*-- scss:rules --*/
+
+:root {
+  --site-accent: #74c0da;
+  --site-accent-hover: #9bd5e7;
+  --site-highlight: #24414b;
+  --site-highlight-strong: #315766;
+  --site-on-highlight: #e4f2f6;
+  --site-bg: #171a1c;
+  --site-surface: #202529;
+  --site-surface-strong: #293035;
+  --site-text: #f3f5f6;
+  --site-text-muted: #b6c1c6;
+  --site-border: #3a4449;
+  --site-on-accent: #171a1c;
+  --site-focus: #74c0da;
+  --site-code-bg: #202529;
+  --site-title-bg: #293035;
+  --site-title-text: #f3f5f6;
+  --site-title-muted: #b6c1c6;
+  --site-home-writing-bg: #202529;
+  --site-home-projects-bg: #293035;
+}

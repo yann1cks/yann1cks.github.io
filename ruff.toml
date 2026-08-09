@@ -1,0 +1,10 @@
+line-length = 88
+target-version = "py314"
+extend-exclude = [
+  ".pixi",
+  ".quarto",
+  "_freeze",
+  "_site",
+  "*.md",
+  "*.qmd",
+]

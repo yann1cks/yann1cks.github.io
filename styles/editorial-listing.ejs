@@ -1,0 +1,28 @@
+```{=html}
+<div class="editorial-listing list">
+<% if (items.length === 0) { %>
+  <p class="listing-empty"><%- templateParams["empty-message"] || "No entries published yet." %></p>
+<% } else { %>
+  <% for (const item of items) { %>
+  <article class="editorial-listing-item" <%= metadataAttrs(item) %>>
+    <% if (item.date) { %>
+    <div class="listing-date"><%- item.date %></div>
+    <% } %>
+    <div class="listing-body">
+      <h3 class="listing-title"><a href="<%- item.path %>"><%- item.title %></a></h3>
+      <% if (item.description) { %>
+      <p class="listing-description"><%- item.description %></p>
+      <% } %>
+      <% if (item.categories && item.categories.length) { %>
+      <div class="listing-categories" aria-label="Categories">
+        <% for (const category of item.categories) { %>
+        <span class="listing-category"><%- category %></span>
+        <% } %>
+      </div>
+      <% } %>
+    </div>
+  </article>
+  <% } %>
+<% } %>
+</div>
+```

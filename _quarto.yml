@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - assets/fonts/**
+
+website:
+  title: "Marketing Data Science"
+  description: "Projects and writing about marketing measurement, consumer behaviour, and reproducible data science."
+  search: false
+  favicon: assets/favicon.svg
+  open-graph: true
+  twitter-card:
+    card-style: summary
+  navbar:
+    pinned: true
+    collapse-below: md
+    right:
+      - text: Home
+        href: index.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: About
+        href: cv.qmd
+  page-footer:
+    left: "Marketing Data Science · Consumer Behaviour"
+
+format:
+  html:
+    theme:
+      light:
+        - cosmo
+        - styles/theme.scss
+      dark:
+        - cosmo
+        - styles/theme-dark.scss
+    css: styles/styles.css
+    toc: false
+    code-copy: true
+    code-line-numbers: true
+    code-overflow: wrap
+    syntax-highlighting: arrow
+    lang: en
+    respect-user-color-scheme: true
+    section-divs: true
+
+execute:
+  freeze: auto
+  warning: false
+  message: false

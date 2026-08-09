@@ -1,0 +1,19 @@
+---
+title: "Writing"
+subtitle: "Articles and working notes on analysis, measurement, and consumer behaviour."
+body-classes: listing-page
+listing:
+  id: writing-list
+  contents: posts
+  template: styles/editorial-listing.ejs
+  template-params:
+    empty-message: "No standalone articles published yet."
+  sort: "date desc"
+  fields: [date, title, description, categories]
+  categories: false
+  sort-ui: false
+  filter-ui: false
+---
+
+::: {#writing-list}
+:::

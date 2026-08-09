@@ -1,0 +1,43 @@
+[workspace]
+name = "marketing-data-science-portfolio"
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+requires-pixi = ">=0.76.1"
+
+[dependencies]
+python = "3.14.*"
+python-gil = "3.14.*"
+quarto = "1.9.*"
+jupyter = "*"
+matplotlib = "*"
+pandas = ">=3.0, <4.0"
+air = ">=0.10,<1"
+prettier = "3.*"
+ruff = ">=0.16,<1"
+
+[pypi-dependencies]
+panache-cli = "==2.61.*"
+
+[tasks]
+preview = "quarto preview"
+render = "quarto render"
+format-docs = "panache format ."
+format-python = "ruff format ."
+format-r = "air format ."
+format-styles = 'prettier --write --ignore-path .gitignore "**/*.{css,scss,yaml,yml}" ".github/**/*.{yaml,yml}"'
+check-docs = "panache format --check ."
+check-python = "ruff format --check ."
+check-r = "air format --check ."
+check-styles = 'prettier --check --ignore-path .gitignore "**/*.{css,scss,yaml,yml}" ".github/**/*.{yaml,yml}"'
+format = [
+  { task = "format-docs" },
+  { task = "format-python" },
+  { task = "format-r" },
+  { task = "format-styles" },
+]
+format-check = [
+  { task = "check-docs" },
+  { task = "check-python" },
+  { task = "check-r" },
+  { task = "check-styles" },
+]

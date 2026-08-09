@@ -1,0 +1,79 @@
+---
+title: "Home"
+description: >-
+  Marketing data science focused on measurement, consumer behaviour, and clear
+  decisions.
+body-classes: home
+listing:
+  - id: featured-projects
+    contents: projects
+    include:
+      featured: true
+    sort: "date desc"
+    template: styles/editorial-listing.ejs
+    template-params:
+      empty-message: "No projects published yet."
+    fields: [date, title, description, categories]
+    max-items: 3
+    categories: false
+    sort-ui: false
+    filter-ui: false
+  - id: recent-writing
+    contents: posts
+    sort: "date desc"
+    template: styles/editorial-listing.ejs
+    template-params:
+      empty-message: "No standalone articles published yet."
+    fields: [date, title, description, categories]
+    max-items: 3
+    categories: false
+    sort-ui: false
+    filter-ui: false
+page-layout: full
+---
+
+::: {.hero}
+::::: {.hero-content}
+::::::: {.eyebrow}
+/ marketing data science · consumer behaviour
+:::::::
+
+# Marketing data science for better consumer decisions
+
+I use experiments, customer data, and statistical modelling to understand what drives
+marketing performance and consumer decisions.
+
+::::::: {.hero-links}
+[Browse writing](#writing){.btn .btn-primary} [Explore
+projects](#projects){.btn .btn-outline-secondary}
+:::::::
+:::::
+:::
+
+::: {.content-band}
+::::: {.content-wrap}
+::::::: {.home-streams}
+::::::::: {.stream-panel .writing-stream}
+## / writing
+
+::::::::::: {#recent-writing}
+:::::::::::
+
+::::::::::: {.stream-footer}
+[All writing](blog.qmd){.text-link}
+:::::::::::
+:::::::::
+
+::::::::: {.stream-panel .projects-stream}
+## / projects
+
+::::::::::: {#featured-projects}
+:::::::::::
+
+::::::::::: {.stream-footer}
+[All projects](projects.qmd){.text-link}
+:::::::::::
+:::::::::
+:::::::
+:::::
+:::
