@@ -5,7 +5,7 @@ project:
     - assets/fonts/**
 
 website:
-  title: "Marketing Data Science"
+  title: "My Personal Blog"
   description: "Projects and writing about marketing measurement, consumer behaviour, and reproducible data science."
   search: false
   favicon: assets/favicon.svg
@@ -22,8 +22,15 @@ website:
         href: projects.qmd
       - text: About
         href: cv.qmd
+    tools:
+      - icon: github
+        href: https://github.com/yann1cks
+        aria-label: GitHub profile
+      - icon: linkedin
+        href: https://www.linkedin.com/in/yannick-stadtfeld/
+        aria-label: LinkedIn profile
   page-footer:
-    left: "Marketing Data Science · Consumer Behaviour"
+    left: "My Personal Blog · Consumer Behaviour"
 
 format:
   html:

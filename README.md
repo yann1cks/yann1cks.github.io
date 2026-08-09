@@ -1,12 +1,8 @@
-# Marketing Data Science Portfolio
+# My Personal Blog
 
-A small Quarto website for projects and writing about marketing measurement, consumer
-behaviour, and reproducible data science. The public pages are deliberately text-led;
-charts and other graphics only appear inside project case studies and articles.
-
+A small Quarto website for projects and personal writing.
 The visual system uses locally hosted Source Sans 3 and Source Code Pro variable fonts.
-Writing and Projects are separate content streams, with shared metadata-driven listing
-layouts.
+Writing and Projects are separate content streams, with shared metadata-driven listing layouts.
 
 ## Local setup
 
@@ -129,14 +125,6 @@ featured: true
 Projects are sorted by date. `featured: true` also places a project in the featured
 section on the home page. Listing fields deliberately exclude images, even when a
 project contains charts.
-
-## Personal links and domain
-
-The site contains no guessed personal links or domain. Once the real values are known:
-
-1. Add GitHub and LinkedIn items to `website.navbar.right` in `_quarto.yml`.
-2. Add `website.site-url` for correct absolute social URLs.
-3. For a custom domain, create a `CNAME` file and include it under `project.resources`.
 
 ## GitHub Pages
 

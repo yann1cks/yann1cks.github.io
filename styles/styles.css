@@ -136,19 +136,23 @@ button:focus-visible,
   text-underline-offset: 0.45rem;
 }
 
-.navbar .quarto-color-scheme-toggle {
+.navbar .quarto-navbar-tools {
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.navbar .quarto-navigation-tool {
   align-items: center;
   border-radius: 50%;
   color: var(--site-text);
   display: inline-flex;
   height: 2.5rem;
   justify-content: center;
-  margin-left: 0.35rem;
   padding: 0 !important;
   width: 2.5rem;
 }
 
-.navbar .quarto-color-scheme-toggle:hover {
+.navbar .quarto-navigation-tool:hover {
   background: var(--site-surface);
   color: var(--site-accent);
 }
