@@ -1,0 +1,23 @@
+<script>
+  // Quarto's category links need a root offset when search is disabled.
+  const home = document.querySelector(".navbar-brand");
+  if (home && !document.querySelector('meta[name="quarto:offset"]')) {
+    const offset = document.createElement("meta");
+    offset.name = "quarto:offset";
+    offset.content = new URL(".", home.href).href;
+    document.head.append(offset);
+  }
+
+  const section = document.body.classList.contains("writing-page")
+    ? "blog.html"
+    : document.body.classList.contains("project-page")
+      ? "projects.html"
+      : null;
+  if (section) {
+    const link = document.querySelector(`.navbar a[href$="/${section}"]`);
+    if (link) {
+      link.classList.add("active");
+      link.setAttribute("aria-current", "location");
+    }
+  }
+</script>

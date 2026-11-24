@@ -4,6 +4,7 @@ subtitle: >-
   Case studies in marketing measurement, consumer analytics, and reproducible data
   science.
 body-classes: listing-page
+page-layout: full
 listing:
   id: projects-list
   contents: projects

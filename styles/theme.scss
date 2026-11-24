@@ -1,32 +1,20 @@
 /*-- scss:defaults --*/
 
-$web-font-path: false;
-$font-family-sans-serif:
-  "Source Sans 3",
-  system-ui,
-  -apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  sans-serif;
-$font-family-monospace:
-  "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-$font-family-base: $font-family-sans-serif;
-$headings-font-family: $font-family-sans-serif;
-$body-bg: #ffffff;
-$body-color: #172126;
-$headings-color: #172126;
+$body-bg: #f4ecdd;
+$body-color: #1c353d;
+$headings-color: #0e4e68;
 $link-color: #0e4e68;
 $primary: #0e4e68;
 $code-color: #0e4e68;
-$code-bg: #edf3f5;
-$code-block-bg: #f4f7f8;
-$pre-color: #172126;
-$navbar-bg: #ffffff;
-$navbar-fg: #172126;
+$code-bg: #dce8e4;
+$code-block-bg: #ece2d0;
+$pre-color: #1c353d;
+$navbar-bg: #f4ecdd;
+$navbar-fg: #0e4e68;
 $navbar-hl: #0e4e68;
-$footer-bg: #ffffff;
-$footer-fg: #53626a;
-$border-color: #d6dee2;
+$footer-bg: #f4ecdd;
+$footer-fg: #48616a;
+$border-color: #b7cac5;
 $focus-ring-color: rgba(#0e4e68, 0.35);
 
 /*-- scss:rules --*/
@@ -34,21 +22,13 @@ $focus-ring-color: rgba(#0e4e68, 0.35);
 :root {
   --site-accent: #0e4e68;
   --site-accent-hover: #0a3d52;
-  --site-highlight: #d5eaf2;
-  --site-highlight-strong: #b9dbe7;
+  --site-highlight: #dce8e4;
   --site-on-highlight: #0e4e68;
-  --site-bg: #ffffff;
-  --site-surface: #f4f7f8;
-  --site-surface-strong: #e8eef1;
-  --site-text: #172126;
-  --site-text-muted: #53626a;
-  --site-border: #d6dee2;
-  --site-on-accent: #ffffff;
+  --site-bg: #f4ecdd;
+  --site-text: #1c353d;
+  --site-heading: #0e4e68;
+  --site-text-muted: #48616a;
+  --site-border: #b7cac5;
   --site-focus: #0e4e68;
-  --site-code-bg: #f4f7f8;
-  --site-title-bg: #0e4e68;
-  --site-title-text: #ffffff;
-  --site-title-muted: #d5eaf2;
-  --site-home-writing-bg: #f4f7f8;
-  --site-home-projects-bg: #e2edf1;
+  --site-code-bg: #ece2d0;
 }

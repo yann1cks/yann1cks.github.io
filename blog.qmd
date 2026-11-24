@@ -1,7 +1,9 @@
 ---
-title: "Writing"
-subtitle: "Articles and working notes on analysis, measurement, and consumer behaviour."
+title: "Blog"
+subtitle: >-
+  Articles and working notes on marketing data science, my homelab, and other things.
 body-classes: listing-page
+page-layout: full
 listing:
   id: writing-list
   contents: posts

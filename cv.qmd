@@ -3,35 +3,11 @@ title: "About"
 subtitle: "Marketing data science, consumer behaviour, and practical measurement."
 ---
 
-## Profile
+I'm Yannick, a marketing data scientist with a background in psychology. This is where I
+write about measurement, consumer behaviour, and the practical questions that come up
+when working with data. I also write about my homelab and other things that catch my
+interest.
 
-I am a marketing data scientist focused on understanding and improving marketing
-performance through experiments, customer analytics, and statistical modelling. I care
-about analysis that is reproducible, easy to scrutinise, and useful in real decisions.
-
-My academic background in psychology helps me ask better questions about behaviour,
-measurement, and decision-making. It complements the data science work without replacing
-its practical marketing focus.
-
-## What I work on
-
-- Designing and evaluating marketing experiments.
-- Understanding campaign performance beyond surface-level attribution.
-- Analysing customer segments, journeys, and response patterns.
-- Building transparent Python and SQL workflows for repeatable analysis.
-- Turning statistical output into recommendations that non-technical teams can use.
-
-## How I approach analysis
-
-Start with the decision, make assumptions visible, and use the simplest method that can
-answer the question credibly. A useful analysis should explain not only what happened,
-but also what the team should learn or do next.
-
-## Tools and methods
-
-Python, pandas, scikit-learn, SQL, Quarto, Git, experimentation, campaign analytics,
-segmentation, forecasting, data visualisation, and stakeholder communication.
-
-::: {.about-link}
-[Explore selected projects](projects.qmd){.text-link}
-:::
+My approach is to start with the question, make assumptions visible, and use the
+simplest method that can answer it credibly. The [blog](blog.qmd) collects working notes
+and longer articles; [projects](projects.qmd) show the analysis behind them.

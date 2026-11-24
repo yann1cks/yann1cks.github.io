@@ -5,8 +5,8 @@ project:
     - assets/fonts/**
 
 website:
-  title: "My Personal Blog"
-  description: "Projects and writing about marketing measurement, consumer behaviour, and reproducible data science."
+  title: "Yannick Stadtfeld"
+  description: "Notes on marketing data science, measurement, and reproducible analysis, with occasional writing about my homelab and other things."
   search: false
   favicon: assets/favicon.svg
   open-graph: true
@@ -15,37 +15,40 @@ website:
   navbar:
     pinned: true
     collapse-below: md
+    tools-collapse: true
     right:
-      - text: Home
-        href: index.qmd
+      - text: Blog
+        href: blog.qmd
       - text: Projects
         href: projects.qmd
       - text: About
         href: cv.qmd
-    tools:
-      - icon: github
-        href: https://github.com/yann1cks
-        aria-label: GitHub profile
-      - icon: linkedin
-        href: https://www.linkedin.com/in/yannick-stadtfeld/
-        aria-label: LinkedIn profile
   page-footer:
-    left: "My Personal Blog · Consumer Behaviour"
+    left: "Yannick Stadtfeld · Notes on marketing data science"
+    right:
+      - text: GitHub
+        href: https://github.com/yann1cks
+      - text: LinkedIn
+        href: https://www.linkedin.com/in/yannick-stadtfeld/
 
 format:
   html:
     theme:
       light:
         - cosmo
+        - styles/typography.scss
         - styles/theme.scss
       dark:
         - cosmo
+        - styles/typography.scss
         - styles/theme-dark.scss
     css: styles/styles.css
+    include-after-body: styles/navigation.html
+    grid:
+      body-width: 672px
     toc: false
     code-copy: true
     code-line-numbers: true
-    code-overflow: wrap
     syntax-highlighting: arrow
     lang: en
     respect-user-color-scheme: true

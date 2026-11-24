@@ -1,8 +1,11 @@
-# My Personal Blog
+# Yannick Stadtfeld
 
-A small Quarto website for projects and personal writing. The visual system uses locally
-hosted Source Sans 3 and Source Code Pro variable fonts. Writing and Projects are
-separate content streams, with shared metadata-driven listing layouts.
+A small Quarto blog for writing and projects about marketing data science, with
+occasional notes on homelab projects and other interests. The home page puts recent
+writing first, followed by up to two featured projects. Shared editorial listings use
+open rows and fine dividers. The visual system pairs warm offwhite and petrol in light
+and dark modes, with locally hosted Source Sans 3 for reading and Source Code Pro for
+metadata and code.
 
 ## Local setup
 

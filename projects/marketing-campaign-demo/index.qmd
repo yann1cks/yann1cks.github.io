@@ -47,9 +47,7 @@ efficiency, while Search carries more volume.
 ```{python}
 #| label: fig-campaign-roas
 #| fig-cap: "Return on ad spend by channel"
-#| fig-alt: >-
-#|   Horizontal bar chart comparing return on ad spend across five channels. Email is
-#|   highest, followed by Affiliate, Search, Social, and Display.
+#| fig-alt: "ROAS: Email, Affiliate, Search, Social, Display, in descending order."
 
 fig, ax = plt.subplots(figsize=(7, 4))
 ordered = campaigns.sort_values("roas")

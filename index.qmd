@@ -1,8 +1,8 @@
 ---
 title: "Home"
 description: >-
-  Marketing data science focused on measurement, consumer behaviour, and clear
-  decisions.
+  Notes on marketing data science, measurement, and reproducible analysis, with
+  occasional writing about my homelab and other things.
 body-classes: home
 listing:
   - id: featured-projects
@@ -14,7 +14,7 @@ listing:
     template-params:
       empty-message: "No projects published yet."
     fields: [date, title, description, categories]
-    max-items: 3
+    max-items: 2
     categories: false
     sort-ui: false
     filter-ui: false
@@ -32,48 +32,31 @@ listing:
 page-layout: full
 ---
 
-::: {.hero}
-::::: {.hero-content}
-::::::: {.eyebrow}
-/ marketing data science · consumer behaviour
-:::::::
+::: {.site-intro}
+# Notes on marketing data science
 
-# Marketing data science for better consumer decisions
+Writing and projects on measurement, consumer behaviour, and reproducible analysis.
+Occasional notes on my homelab and other things, too.
+:::
 
-I use experiments, customer data, and statistical modelling to understand what drives
-marketing performance and consumer decisions.
+::: {.writing-stream}
+## Latest writing
 
-::::::: {.hero-links}
-[Browse writing](#writing){.btn .btn-primary} [Explore
-projects](#projects){.btn .btn-outline-secondary}
-:::::::
+::::: {#recent-writing}
+:::::
+
+::::: {.stream-footer}
+[All writing](blog.qmd){.text-link}
 :::::
 :::
 
-::: {.content-band}
-::::: {.content-wrap}
-::::::: {.home-streams}
-::::::::: {.stream-panel .writing-stream}
-## / writing
+::: {.projects-stream}
+## Selected projects
 
-::::::::::: {#recent-writing}
-:::::::::::
+::::: {#featured-projects}
+:::::
 
-::::::::::: {.stream-footer}
-[All writing](blog.qmd){.text-link}
-:::::::::::
-:::::::::
-
-::::::::: {.stream-panel .projects-stream}
-## / projects
-
-::::::::::: {#featured-projects}
-:::::::::::
-
-::::::::::: {.stream-footer}
+::::: {.stream-footer}
 [All projects](projects.qmd){.text-link}
-:::::::::::
-:::::::::
-:::::::
 :::::
 :::
