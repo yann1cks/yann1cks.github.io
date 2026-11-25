@@ -1,8 +1,8 @@
 ---
 title: "Sample note: CalDAV tasks across devices"
 description: >-
-  A placeholder for exploring the practical difficulties of keeping tasks in sync
-  across platforms with mailbox.org and CalDAV.
+  A placeholder for exploring the practical difficulties of keeping tasks in sync across
+  platforms with mailbox.org and CalDAV.
 date: "2026-11-24"
 categories: [Homelab, CalDAV, Productivity]
 ---
@@ -12,29 +12,29 @@ below. It sketches the questions a future article could investigate.
 
 ## One task list, many devices
 
-The idea sounds simple: keep tasks on mailbox.org and use whichever app feels at home
-on each device. CalDAV provides the connection, and iCalendar's `VTODO` component
+The idea sounds simple: keep tasks on mailbox.org and use whichever app feels at home on
+each device. CalDAV provides the connection, and iCalendar's `VTODO` component
 represents the tasks. In practice, agreeing on a protocol does not mean that every app
 supports the same features or presents them in the same way.
 
-A task created on an iPad should still make sense on an Android phone, a Linux laptop,
-a Windows PC, and an iPhone. The interesting question is not just whether it appears,
-but whether its due date, notes, recurrence, reminders, and completion status survive
-a round trip through different apps.
+A task created on an iPad should still make sense on an Android phone, a Linux laptop, a
+Windows PC, and an iPhone. The interesting question is not just whether it appears, but
+whether its due date, notes, recurrence, reminders, and completion status survive a
+round trip through different apps.
 
 ## A different app for every platform
 
 - **iOS and iPadOS:** Apple Reminders can connect to CalDAV accounts, although Apple
   notes that some features are unavailable outside iCloud. Which task properties work
   with mailbox.org would need to be checked on both devices.
-- **Android:** DAVx⁵ can synchronize CalDAV collections with compatible task apps
-  such as Tasks.org or jtx Board. The sync adapter and the app each have a part to play
-  in what can be stored and edited.
+- **Android:** DAVx⁵ can synchronize CalDAV collections with compatible task apps such
+  as Tasks.org or jtx Board. The sync adapter and the app each have a part to play in
+  what can be stored and edited.
 - **Linux and Windows:** KOrganizer is one possible client on both systems; mailbox.org
   documents connecting its calendars and tasks through CalDAV. Other clients and their
   task support deserve a closer look as well.
-- **In the browser:** The mailbox.org interface provides another view of the data and
-  a useful reference when checking what actually reached the server.
+- **In the browser:** The mailbox.org interface provides another view of the data and a
+  useful reference when checking what actually reached the server.
 
 ## Where compatibility becomes complicated
 
@@ -45,10 +45,10 @@ things to examine. A feature missing from an app is different from a broken stan
 the result can still be frustrating when an edit in one place changes what another app
 shows.
 
-Synchronization adds its own questions. How quickly do changes arrive? What happens
-when two devices edit the same task offline? Does an app preserve fields it cannot
-show? And if a task disappears, was it filtered locally, moved to another list, or
-changed on the server?
+Synchronization adds its own questions. How quickly do changes arrive? What happens when
+two devices edit the same task offline? Does an app preserve fields it cannot show? And
+if a task disappears, was it filtered locally, moved to another list, or changed on the
+server?
 
 ## A useful test before committing
 
@@ -59,6 +59,8 @@ would help distinguish a sync problem from a display problem. The outcome should
 record of what was tested, including app versions and limitations, rather than an
 assumption that every CalDAV implementation behaves alike.
 
-For setup details and background, see the [mailbox.org KOrganizer guide](https://kb.mailbox.org/en/private/addressbook-and-calendar/caldav-korganizer/),
-[Apple's Reminders account guide](https://support.apple.com/en-ie/guide/iphone/iph8739025dd/ios),
-and the [DAVx⁵ task app overview](https://www.davx5.com/faq/tasks/advanced-task-features).
+For setup details and background, see the [mailbox.org KOrganizer
+guide](https://kb.mailbox.org/en/private/addressbook-and-calendar/caldav-korganizer/),
+[Apple's Reminders account
+guide](https://support.apple.com/en-ie/guide/iphone/iph8739025dd/ios), and the [DAVx⁵
+task app overview](https://www.davx5.com/faq/tasks/advanced-task-features).
